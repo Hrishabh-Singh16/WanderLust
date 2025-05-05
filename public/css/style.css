@@ -1,0 +1,205 @@
+body{
+      font-family: "Plus Jakarta Sans", sans-serif;
+      display:flex;
+      flex-direction: column;
+      min-height: 100vh;
+    
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #ff385c;
+    font-size: 2rem;
+
+}
+.nav-link{
+    color:#222222 !important;
+
+}
+/* footer */
+.f-info-links  a {
+    text-decoration: none;
+    color:#222222;
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    text-align: center;
+    display:flex;
+    height:8rem;
+    background-color:#ebebeb ;
+    justify-content: center;
+    align-content: space-evenly; 
+    /* using align content because flex wrap is wrap */
+    flex-wrap: wrap;
+    
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* text-align: center; */
+    /* vertical-align: middle; */
+
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info-links a{
+    margin-left: 0.6rem;
+
+}
+/* cards */
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width:100%;
+    object-fit: cover;
+}
+.card-body{
+    padding:0;
+}
+.card-text p {
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+
+}
+/* overlay */
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+
+
+}
+/* new  */
+.add-btn,.edit-btn{
+background-color:#ff385c;
+border:none;
+
+}
+/* show page */
+.show-img{
+    height:30vh;
+    border-radius: 1rem;
+}
+.btns{
+    display:flex;
+  
+    gap:2rem;
+    justify-content: start;
+    margin-top: 1rem;
+    /* padding-left: 1rem; */
+    /* font-size: 2rem; */
+}
+.btn{
+    width:6rem;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* filters */
+#filters {
+    /* margin-top:1rem; */
+    display: grid !important;
+    grid-template-columns: repeat(9, 1fr) auto;
+
+
+    align-items: center;
+    /* justify-content:space-around ; */
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.filter {
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.7;
+    /* flex: 1 0 25%; */
+
+}
+
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p {
+    font-size: 0.8rem;
+}
+.tax-toggle{
+    border:1px solid black;
+    height:3.5rem;
+    border-radius: 1rem;
+    padding:1rem;
+    display:flex;
+    align-items: center;
+}
+.tax-info{
+    display: none;
+}
+.btn-search{
+    background-color:#ff385c;
+    color:white;
+    width:170px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap:1rem; */
+    /* justify-content: start; */
+    border-radius: 25px;
+    padding: 0rem 1rem 0rem 1rem;
+
+    
+
+}
+.btn-search:hover{
+    background-color:#ff385c;
+    color:white;
+
+
+}
+.btn-search i {
+    margin-right: 0.3rem;
+    display: inline;
+}
+.search-input{
+    border-radius: 25px;
+    padding:0.5rem 3rem 0.5rem 3rem;
+
+
+}
+@media (min-width:576px) and (max-width: 992px) {
+    /* Your CSS rules here */
+    #filters{
+        grid-template-columns: repeat(4, 1fr);
+        
+
+
+    }
+  }
+  @media (max-width: 576px) {
+    /* Your CSS rules here */
+    #filters{
+        grid-template-columns: repeat(3, 1fr);
+        
+
+
+    }
+  }
