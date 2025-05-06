@@ -51,10 +51,10 @@ SECRET=your_session_secret
 ```bash
 npm start
 ```
-The application will run on http://localhost:3000.
+The application will run on http://localhost:8080.
 
 ## 🧪 Usage
-- Navigate to http://localhost:3000 in your browser.
+- Navigate to http://localhost:8080 in your browser.
 
 - Browse available rental properties.
 
