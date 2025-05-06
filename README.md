@@ -49,7 +49,7 @@ SECRET=your_session_secret
 ```
 ### Start the server:
 ```bash
-npm start
+nodemon app.js
 ```
 The application will run on http://localhost:8080.
 
